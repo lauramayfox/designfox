@@ -40,61 +40,68 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="/media/foxlogo.png" alt="logo" class="img-fluid logo-image">
-                    <h2 class="logo-font text-black my-0"><strong>Design</strong> Fox</h2>
-                </a>
-            </div>
+    <header class="container-fluid fixed-top  shadow-sm">
+        <div class="container">
+            <div class="row align-items-center py-2">
+                <!-- Logo -->
+                <div class="col-12 col-lg-4 text-center text-lg-left">
+                    <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
+                        <img src="/media/foxlogo.png" alt="logo" class="img-fluid logo-image mr-2" style="max-height: 50px;">
+                        <h2 class="logo-font text-black my-0"><strong>Design</strong> Fox</h2>
+                    </a>
+                </div>
 
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">Profile</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
+                <!-- Navigation, Profile & Cart -->
+                <div class="col-12 col-lg-8 d-flex justify-content-end">
+                    <nav class="navbar navbar-expand-lg navbar-light w-100">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse w-100" id="main-nav">
+                            <ul class="navbar-nav mr-auto">
+                                <!-- main navigation links -->
+                                {% include 'includes/main-nav.html' %}
+                            </ul>
+                            <ul class="navbar-nav">
+                                <!-- Profile -->
+                                <li class="nav-item dropdown">
+                                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Profile
+                                    </a>
+                                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                        {% if request.user.is_authenticated %}
+                                            {% if request.user.is_superuser %}
+                                                <a href="#" class="dropdown-item">Product Management</a>
+                                            {% endif %}
+                                            <a href="#" class="dropdown-item">My Profile</a>
+                                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                        {% else %}
+                                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                        {% endif %}
+                                    </div>
+                                </li>
+
+                                <!-- Cart -->
+                                <li class="nav-item">
+                                    <a class="nav-link {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="#">
+                                        <span class="d-flex align-items-center">
+                                            <i class="fas fa-shopping-bag fa-lg mr-2"></i> 
+                                            <span>
+                                                {% if grand_total %}
+                                                    ${{ grand_total|floatformat:2 }}
+                                                {% else %}
+                                                    $0.00
+                                                {% endif %}
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        $0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                {% include 'includes/main-nav.html' %}
-            </nav>
         </div>
     </header>
 

@@ -1,23 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
 
 
 {% block content %}
 <div class="container h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                <br>
-                <br>
-                test<br>
-                test <br>
-                <br>
-                <br>
-            </h1>
+    <div class="row align-items-center py-5">
+        <!-- Let's Chat Button-->
+        <div class="col-12 col-md-4 d-flex justify-content-start">
             <div class="my-5">
                 <h4>
                     <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Let's Chat</a>
                 </h4>
             </div>
         </div>
+
+        <!-- Hero Image-->
+        <div class="col-12 col-md-8">
+            <div class="container mt-4 d-flex justify-content-end">
+                <img class="w-70 mx-auto img-fluid" id="hero" src="/media/hero.png" alt="hero image quote">
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
+
