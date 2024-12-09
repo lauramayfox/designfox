@@ -11,7 +11,7 @@
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="/media/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{% static '/media/favicon.png' %}">
 
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,7 +46,7 @@
                 <!-- Logo -->
                 <div class="col-12 col-lg-4 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
-                        <img src="/media/foxlogo.png" alt="logo" class="img-fluid logo-image mr-2" style="max-height: 50px;">
+                        <img src="{% static '/media/foxlogo.png' %}" alt="logo" class="img-fluid logo-image mr-2" style="max-height: 50px;">
                         <h2 class="logo-font text-black my-0"><strong>Design</strong> Fox</h2>
                     </a>
                 </div>
@@ -84,9 +84,9 @@
 
                                 <!-- Cart -->
                                 <li class="nav-item">
-                                    <a class="nav-link {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="#">
+                                    <a class="nav-link {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}">
                                         <span class="d-flex align-items-center">
-                                            <i class="fas fa-shopping-bag fa-lg mr-2"></i> 
+                                            <i class="fa-solid fa-cart-shopping" style="color: #212827;"></i>  
                                             <span>
                                                 {% if grand_total %}
                                                     ${{ grand_total|floatformat:2 }}
@@ -106,7 +106,7 @@
     </header>
 
 
-    <main class="flex-fill">
+    <main>
 
         {% block content %}
         <!-- Content Goes here -->
@@ -144,7 +144,7 @@
                 <p>
                     Sign Up To Newsletter<br>
                     Privacy Policy<br>
-                FAQs</p>
+                    <i class="fa-brands fa-stripe fa-lg" style="color: #ffffff;"></i> <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i></p>
             </div> 
         </div>
     </div>
@@ -156,6 +156,8 @@
     
     <!--- Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com -->
     <script src="https://kit.fontawesome.com/f5fb20c689.js" crossorigin="anonymous"></script>
+    
+
 
 
 </body>

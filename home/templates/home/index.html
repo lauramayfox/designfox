@@ -1,27 +1,107 @@
 {% extends "base.html" %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static '/css/index.css' %}">
+<link rel="stylesheet" href="{% static '/css/base.css' %}">
 
 
 {% block content %}
 <div class="container h-100">
     <div class="row align-items-center py-5">
-        <!-- Let's Chat Button-->
-        <div class="col-12 col-md-4 d-flex justify-content-start">
-            <div class="my-5">
+        <!-- Let's Chat Button -->
+        <div class="col-12 col-md-4 d-flex justify-content-start align-items-end">
+            <div class="my-3" style="padding-left: 50%;">
                 <h4>
-                    <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Let's Chat</a>
+                    <a href="#" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Let's Chat</a>
                 </h4>
             </div>
         </div>
 
-        <!-- Hero Image-->
+        <!-- Hero Image -->
         <div class="col-12 col-md-8">
-            <div class="container mt-4 d-flex justify-content-end">
-                <img class="w-70 mx-auto img-fluid" id="hero" src="/media/hero.png" alt="hero image quote">
+            <div class="container mt-4 d-flex justify-content-center" style="padding-top: 80px; padding-bottom: 60px;">
+                <img class="img-fluid" id="hero" src="{% static '/media/hero.png' %}" alt="hero image quote" style="width: 50%;">
             </div>
         </div>
     </div>
 </div>
-{% endblock %}
 
+<!--Portfolio Work -->
+
+<div class="container-fluid">
+    <div class="row no-gutters">
+    <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 4">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 5">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 6">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 7">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 8">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 9">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 10">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 11">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 12">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 11">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 12">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="{% static 'portfolio/shop2.jpg' %}" class="img-fluid" alt="Work 12">
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Why choose us -->
+<section class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-4 text-center text-lg-left" style="padding-top: 40px; padding-bottom: 40px;">
+        <h2 class="logo-font my-0" style="color: #334039;">Why choose <strong>Design</strong> Fox?</h2>
+    </div>
+    <div class="card-group col-lg-11" style="padding-bottom: 40px;">
+       <div class="card text-center shadow mx-4">
+        <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 4rem; margin-bottom: 1.5rem; color: #334039;"></i>
+          <div class="card-body d-flex flex-column justify-content-between">
+             <h2 class="display-6 font-Black">Captivate</h2>
+             <p class="card-text">Grab attention and leave a lasting impression</p>
+          </div>
+       </div>
+       
+       <div class="card text-center shadow mx-4">
+        <i class="fa-regular fa-user" style="font-size: 4rem; margin-bottom: 1.5rem; color: #334039;"></i>
+          <div class="card-body d-flex flex-column justify-content-between">
+             <h2 class="display-6 font-Black">Engage</h2>
+             <p class="card-text">Connect with your audience through compelling visuals</p>
+          </div>
+       </div>
+       
+       <div class="card text-center shadow mx-4">
+        <i class="fa-solid fa-seedling" style="font-size: 4rem; margin-bottom: 1.5rem; color:#334039;"></i>
+          <div class="card-body d-flex flex-column justify-content-between">
+             <h2 class="display-6 font-Black">Elevate</h2>
+             <p class="card-text">Take your brand to the next level with impactful design</p>
+          </div>
+       </div>
+    </div>
+</section>
+
+
+{% endblock %}
