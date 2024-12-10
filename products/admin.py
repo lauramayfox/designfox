@@ -4,4 +4,8 @@ from django.contrib import admin
 from .models import Product, Category
 
 admin.site.register(Product)
+list_display = ('name', 'price', 'description')
 admin.site.register(Category)
+
+
+    
