@@ -26,6 +26,16 @@ header {
 }
 
 
+.btn-black {
+    background: #334039;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* important to override link colors for <a> elements */
+    border: 1px solid #334039;
+}
 
 /* dropdown menu on hover */
 .nav-item.dropdown:hover .dropdown-menu {
