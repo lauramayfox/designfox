@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-<link rel="stylesheet" href="{% static '/css/index.css' %}">
 <link rel="stylesheet" href="{% static '/css/base.css' %}">
 
 
@@ -19,7 +18,7 @@
         <!-- Hero Image -->
         <div class="col-12 col-md-8">
             <div class="container mt-4 d-flex justify-content-center" style="padding-top: 80px; padding-bottom: 60px;">
-                <img class="img-fluid" id="hero" src="{% static '/media/hero.png' %}" alt="hero image quote" style="width: 50%;">
+                <img class="img-fluid" id="hero" src="{% media 'hero.png' %}" alt="hero image quote" style="width: 50%;">
             </div>
         </div>
     </div>
