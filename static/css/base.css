@@ -37,6 +37,20 @@ header {
     border: 1px solid #334039;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* dropdown menu on hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
