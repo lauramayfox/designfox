@@ -7,18 +7,18 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+from django.shortcuts import render, redirect
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
-
-    quantity = int(request.POST.get('quantity'))
+    """ Add the specified product to the shopping bag with a default quantity of 1 """
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
+    # Increment quantity if product already in the bag, else add it with quantity 1
+    if item_id in bag:
+        bag[item_id] += 1
     else:
-        bag[item_id] = quantity
+        bag[item_id] = 1
 
     request.session['bag'] = bag
     return redirect(redirect_url)
