@@ -161,7 +161,11 @@
     <script src="https://kit.fontawesome.com/f5fb20c689.js" crossorigin="anonymous"></script>
     
 
-
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
 
 </body>
 </html>
