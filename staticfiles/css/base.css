@@ -1,0 +1,80 @@
+/* General */
+html {
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+header {
+    background-color: white;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+
+.shop-now-button {
+    background: #334039;
+    color: white;
+    min-width: 260px;
+}
+
+
+.btn-black {
+    background: #334039;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* important to override link colors for <a> elements */
+    border: 1px solid #334039;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* Footer */
+
+.footer-bg {
+background-color: #334039;
+}
+
+.social-links i {
+color:  white;
+font-size: 1.5rem;
+margin: 0.7rem;
+    }
