@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Get a Design Quote</h2>
+<div class="row">
+  <div class="col">
+      <hr>
+      <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Design Quote</h2>
+      <hr>
+  </div>
+</div>
+<div class="p-4 border rounded shadow-sm" style="background-color: #95bda06c;">
   <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
   </form>
+  </div>
 {% endblock %}
