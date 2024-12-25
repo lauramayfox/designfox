@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-lauramayfox-designfox-3e54pjnt7b0.ws.codeinstitute-ide.net',
-'.herokuapp.com',]
+'.herokuapp.com', 'design-fox-0911e03a4419.herokuapp.com', 'localhost',]
 
 
 # Application definition
