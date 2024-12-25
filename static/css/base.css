@@ -18,13 +18,11 @@ header {
     min-width: 200px;
 }
 
-
 .shop-now-button {
     background: #334039;
     color: white;
     min-width: 260px;
 }
-
 
 .btn-black {
     background: #334039;
@@ -33,7 +31,7 @@ header {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid #334039;
 }
 
@@ -51,30 +49,137 @@ header {
     cursor: pointer;
 }
 
-/* dropdown menu on hover */
+/* Dropdown menu on hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* Footer */
-
 .footer-bg {
-background-color: #334039;
+    background-color: #334039;
 }
 
 .social-links i {
-color:  white;
-font-size: 1.5rem;
-margin: 0.7rem;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0.7rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Smaller devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
     }
+
+    .logo-image {
+        max-height: 40px; 
+    }
+
+    .navbar {
+        padding: 0; 
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff; 
+    }
+
+    .footer-bg {
+        padding: 20px 10px;
+    }
+
+    .social-links i {
+        font-size: 1.2rem; 
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust the 'Let's Chat' button container and position */
+    .col-12.col-md-4 {
+        justify-content: center !important;
+        padding-left: 0 !important;
+        order: 2; /* Move the button below the hero image */
+    }
+
+    /* Adjust the button itself */
+    .shop-now-button {
+        min-width: 200px;
+        font-size: 1rem;
+        padding: 8px 16px;
+        display: block;
+        text-align: center;
+        margin: 20px auto; /* Add spacing above and below */
+    }
+
+    /* Adjust hero image */
+    #hero {
+        width: 100%;
+        padding: 0; /* Remove extra padding */
+    }
+
+    /* Adjust the button container to be centered below the image */
+    .col-12.col-md-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+    .logo-font {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; 
+    }
+
+    .dropdown-menu {
+        min-width: 150px; 
+    }
+
+    .footer .col-md-3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .shop-now-button {
+        min-width: 200px; 
+    }
+
+    body {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Tablets (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 20px 0;
+    }
+
+    .logo-font {
+        font-size: 1.5rem;
+    }
+
+    .shop-now-button {
+        min-width: 240px;
+    }
+}
