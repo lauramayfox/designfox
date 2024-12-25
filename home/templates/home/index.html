@@ -10,7 +10,7 @@
         <div class="col-12 col-md-4 d-flex justify-content-start align-items-end">
             <div class="my-3" style="padding-left: 50%;">
                 <h4>
-                    <a href="#" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Let's Chat</a>
+                    <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Let's Chat</a>
                 </h4>
             </div>
         </div>
@@ -29,40 +29,28 @@
 <div class="container-fluid">
     <div class="row no-gutters">
     <div class="col-6 col-md-3">
-            <img src="{% static 'images/portfolio/filmcover.jpg' %}" class="img-fluid" alt="Work 1">
+            <img src="{% static 'images/portfolio/product4.jpg' %}" class="img-fluid" alt="Work 1">
         </div>
         <div class="col-6 col-md-3">
-            <img src="{% static 'images/portfolio/filmcover.jpg' %}" class="img-fluid" alt="Work 2">
+            <img src="{% static 'images/portfolio/poster.jpg' %}" class="img-fluid" alt="Work 2">
         </div>
         <div class="col-6 col-md-3">
-            <img src="{% static 'images/portfolio/filmcover.jpg' %}" class="img-fluid" alt="Work 3">
+            <img src="{% static 'images/portfolio/product4.jpg' %}" class="img-fluid" alt="Work 3">
         </div>
         <div class="col-6 col-md-3">
-            <img src="{% static 'images/portfolio/filmcover.jpg' %}" class="img-fluid" alt="Work 4">
+            <img src="{% static 'images/portfolio/poster.jpg' %}" class="img-fluid" alt="Work 4">
         </div>
         <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 5">
+            <img src="{% static 'images/portfolio/pexel3.jpg' %}" class="img-fluid" alt="Work 5">
         </div>
         <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 6">
+            <img src="{% static 'images/portfolio/pexel1.jpg' %}" class="img-fluid" alt="Work 6">
         </div>
         <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 7">
+            <img src="{% static 'images/portfolio/pexel3.jpg' %}" class="img-fluid" alt="Work 7">
         </div>
         <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 8">
-        </div>
-        <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 9">
-        </div>
-        <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 10">
-        </div>
-        <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 11">
-        </div>
-        <div class="col-6 col-md-3">
-            <img src="/media/portfolio/" class="img-fluid" alt="Work 12">
+            <img src="{% static 'images/portfolio/pexel1.jpg' %}" class="img-fluid" alt="Work 8">
         </div>
     </div>
 </div>
@@ -72,7 +60,7 @@
 
 <!-- Why choose us -->
 <section class="row d-flex justify-content-center">
-    <div class="col-12 col-lg-4 text-center text-lg-left" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="col-12 col-lg-4 text-center text-lg-left" style="padding-top: 70px; padding-bottom: 40px;">
         <h2 class="logo-font my-0" style="color: #334039;">Why choose <strong>Design</strong> Fox?</h2>
     </div>
 
@@ -98,5 +86,21 @@
     
 </section>
 
+
+<!-- Why choose us -->
+<section class="row d-flex justify-content-center">
+    <div class="col-12 col-lg-4 text-center text-lg-left" style="padding-top: 50px; padding-bottom: 40px;">
+        <h2 class="logo-font my-0" style="color: #334039;"><strong>Contact us today!</strong></h2>
+    </div>
+
+    <div class="d-flex justify-content-center text-center gap-4" style="padding-bottom: 40px;">
+        <div class="d-flex flex-column align-items-center mx-2">
+            <i class="fa-regular fa-handshake" style="font-size: 4rem; margin-bottom: 1.5rem; color: #334039;"></i>
+            <h4>
+                <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Let's Chat</a>
+            </h4>
+        </div>
+    
+</section>
 
 {% endblock %}
