@@ -7,17 +7,23 @@
     <hr>
 </div>
 
-{% if wishlist_items %}
-    <ul>
-        {% for item in wishlist_items %}
-            <li>
-                <a href="{{ item.product.get_absolute_url }}">{{ item.product.name }}</a>
-                - Added on {{ item.added_on }}
-            </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>Your wishlist is empty.</p>
-{% endif %}
+<div class="container">
 
+    {% if wishlist_items %}
+        <ul class="list-group">
+            {% for item in wishlist_items %}
+                <li class="list-group-item">
+                    <strong>{{ item.product.name }}</strong><br>
+                    Added on: {{ item.added_on|date:"M d, Y" }}<br>
+                    <form method="POST" action="{% url 'wishlist:remove_from_wishlist' item.product.id %}" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm mt-2">Remove</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Your wishlist is empty!</p>
+    {% endif %}
+</div>
 {% endblock %}
