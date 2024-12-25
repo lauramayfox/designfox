@@ -109,30 +109,27 @@ header {
         font-size: 0.9rem;
     }
 
-    /* Adjust the 'Let's Chat' button container and position */
     .col-12.col-md-4 {
         justify-content: center !important;
         padding-left: 0 !important;
-        order: 2; /* Move the button below the hero image */
+        order: 2;
     }
 
-    /* Adjust the button itself */
     .shop-now-button {
         min-width: 200px;
         font-size: 1rem;
         padding: 8px 16px;
         display: block;
         text-align: center;
-        margin: 20px auto; /* Add spacing above and below */
+        margin: 20px auto; 
     }
 
-    /* Adjust hero image */
+    /* hero image */
     #hero {
         width: 100%;
-        padding: 0; /* Remove extra padding */
+        padding: 0; 
     }
 
-    /* Adjust the button container to be centered below the image */
     .col-12.col-md-8 {
         display: flex;
         flex-direction: column;

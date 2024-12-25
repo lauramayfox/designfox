@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view that renders the bag contents page """
 
@@ -9,11 +10,10 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ Add the specified product to the shopping bag with a default quantity of 1 """
+    """ product to the shopping bag"""
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    # Increment quantity if product already in the bag, else add it with quantity 1
     if item_id in bag:
         bag[item_id] += 1
     else:
