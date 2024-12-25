@@ -66,6 +66,16 @@
                     </form>
                     
                 </div>
+                
+                {% if user.is_authenticated %}
+                <form method="POST" action="{% url 'wishlist:add_to_wishlist' product.id %}">
+                {% csrf_token %}
+                <button type="submit">Add to Wishlist</button>
+                </form>
+                 {% else %}
+                 <p><a href="{% url 'login' %}">Login</a> to add to your wishlist.</p>
+                 {% endif %}
+
             </div>
         </div>
     </div>
