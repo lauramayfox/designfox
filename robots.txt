@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /checkout
+Sitemap: https://https://design-fox-0911e03a4419.herokuapp.com/sitemap.xml
