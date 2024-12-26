@@ -6,7 +6,7 @@
             </a>
             <a class="nav-link dropdown text-black" href="#" id="about-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
             <div class="dropdown-menu border-0" aria-labelledby="about-dropdown">
-                <a href="#" class="dropdown-item">Portfolio</a>
+                <a href="/#portfolio" class="dropdown-item">Portfolio</a>
                 <a href="{% url 'about' %}" class="dropdown-item">About</a>
             </div>
         </li>
@@ -28,7 +28,7 @@
         </li>
 
         <li>
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="contact-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'services' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
                 Services
             </a>
         </li>

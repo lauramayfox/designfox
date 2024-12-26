@@ -18,6 +18,7 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('wishlist/', include('wishlist.urls')),
     path('about/', TemplateView.as_view(template_name="about.html"), name='about'),
+    path('services/', TemplateView.as_view(template_name="services.html"), name='services'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'designfox.views.handler404'
