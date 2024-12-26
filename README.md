@@ -132,6 +132,33 @@ The home page (index) features a minimal header with a large hero image for visu
 - User can book their own  (CRUD Functionality)
 - Safety ensured via [Django-AllAuth](https://github.com/pennersr/django-allauth) & csrf tokens
 
+
+
+# Web Marketing Strategies
+
+Questions to consider
+
+- Who are your users?
+- Which online platforms would you find lots of your users?
+- Would your users use social media? If yes, which platforms do you think you would find them on?
+- What do your users need? Could you meet that need with useful content? If yes, how could you best deliver that content to them?
+- Would your business run sales or offer discounts? How do you think your users would most like to hear about these offers?
+- What are the goals of your business? Which marketing strategies would offer the best ways to meet those goals?
+- Would your business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
+
+## SEO 
+
+## Social Media Marketing
+
+Social media accounts
+
+<h1 align="center"><img src="static/images/readme-images/facebook.png"/></h1>
+
+## Email Marketing
+
+Newsletter
+
+
 # Features Left To Be Implemented
 
 
