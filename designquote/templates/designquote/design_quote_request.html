@@ -3,16 +3,34 @@
 {% block content %}
 <div class="row">
   <div class="col">
-      <hr>
-      <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Design Quote</h2>
-      <hr>
+    <hr>
+    <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Design Quote</h2>
+    <hr>
   </div>
 </div>
-<div class="p-4 border rounded shadow-sm" style="background-color: #95bda06c;">
-  <form method="POST">
+
+<div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+  <form method="POST" class="needs-validation">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <div class="mb-3">
+      {% for field in form %}
+        <div class="mb-4">
+          <label for="{{ field.id_for_label }}" class="form-label font-weight-bold">
+            {{ field.label }}
+          </label>
+          {{ field }}
+          {% if field.help_text %}
+            <small class="form-text text-muted">{{ field.help_text }}</small>
+          {% endif %}
+          {% if field.errors %}
+            <div class="text-danger">
+              {{ field.errors }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <button type="submit" class="btn btn-black btn-lg w-40 mt-3">Submit</button>
   </form>
-  </div>
+</div>
 {% endblock %}

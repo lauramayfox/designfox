@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import handler404
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
@@ -16,6 +17,7 @@ urlpatterns = [
     path('designquote/', include('designquote.urls')),
     path('contact/', include('contact.urls')),
     path('wishlist/', include('wishlist.urls')),
+    path('about/', TemplateView.as_view(template_name="about.html"), name='about'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'designfox.views.handler404'

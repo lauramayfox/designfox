@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+        <hr>
+        <h2 class="logo-font mb-4" style="padding-top: 30px; padding-bottom: 10px;">About</h2>
+        <hr>
+    </div>
+</div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <p class="text-center font-weight-bold">
+            Hi, I’m <strong>Laura</strong>, a Graphic Designer based in <strong>Wicklow, Ireland</strong>. 
+          </p>
+          <p class="text-center">
+          I specialize in providing exceptional design services tailored to your unique needs.<br>
+          Whether you're looking to create a memorable brand identity, design a stunning website, 
+          or craft compelling visuals, I bring dedication and expertise to every project.<br> 
+          Let's bring your vision to life!
+          </p>
+          <ul class="list-unstyled text-center mb-4">
+            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Branding</li>
+            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Logo Design</li>
+            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Web Design</li>
+            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Graphic Design</li>
+          </ul>
+        </div>
+        <div class="my-5 text-center">
+          <h4>
+            <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Let's Chat</a>
+          </h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  {% endblock %}

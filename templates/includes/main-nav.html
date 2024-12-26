@@ -1,14 +1,13 @@
 <div class="collapse navbar-collapse" id="main-nav"></div>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="about-link" aria-haspopup="true" aria-expanded="false">
                About
             </a>
             <a class="nav-link dropdown text-black" href="#" id="about-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
             <div class="dropdown-menu border-0" aria-labelledby="about-dropdown">
-                <a href="#" class="dropdown-item">Testimonials</a>
                 <a href="#" class="dropdown-item">Portfolio</a>
-                <a href="#" class="dropdown-item">About</a>
+                <a href="{% url 'about' %}" class="dropdown-item">About</a>
             </div>
         </li>
 
@@ -23,9 +22,15 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        <li>
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'design_quote_request' %}" 
             id="design-quote-link" aria-haspopup="true" aria-expanded="false"> Design Quote</a>
+        </li>
+
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="contact-link" aria-haspopup="true" aria-expanded="false">
+                Services
+            </a>
         </li>
 
         <li class="nav-item dropdown">
