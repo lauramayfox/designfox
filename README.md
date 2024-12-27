@@ -141,18 +141,6 @@ Github projects was used to help me keep track of project features and to help m
 All pages, except for the customer profile portal and wishlist can be used/viewed without registering for an account.
 Only the site owner can view the product management section when logged in as the superuser.
 
-## Custom Django Models
-
-### Design Quote
-
-### Testimonials
-
-### Wishlist
-
-## Features Left To Implement
-
-
-
 ## Base HTML:
 
 The header/nav bar and footer were created in a base file and loaded onto each page at the start of every file.
@@ -160,7 +148,7 @@ The header/nav bar and footer were created in a base file and loaded onto each p
 <h1 align="center"><img src=""/></h1>
 <h1 align="center"><img src=""/></h1>
 
-### Index page:
+### Index
 
 The home page (index) features a minimal header with a large hero image for visual impact. Under the hero image is a small about section and groomer profiles to give the client an idea of the salon, and also to help match them with the right groomer for their needs.
 
@@ -169,34 +157,53 @@ The home page (index) features a minimal header with a large hero image for visu
 <h1 align="center"><img src=""/></h1>
 
 
-##  page
+##  About
 
 
 
 <h1 align="center"><img src=""/></h1>
 <h1 align="center"><img src=""/></h1>
 
-## Contact page
+## Shop 
+
+## Services
+
+## Testimonials
 
 
 <h1 align="center"><img src="static/images/readme-images/contactpage.jpg"/></h1>
 
-## Design Quote page
-
-
+## Design Quote
 
 <h1 align="center"><img src=""/></h1>
+
+## Contact
+
 
 ## Customer profile
 
+## Cart
+
+## Wishlist
+
+## Admin product management
+
+## Newsletter Sign Up
+
+## Privacy Policy
+
 
 
 <h1 align="center"><img src=""/></h1>
 
 
-## 
+## Custom Django Models
 
-<h1 align="center"><img src=""/></h1>
+### Design Quote
+
+### Testimonials
+
+### Wishlist
 
 
 ## Authentication
@@ -205,6 +212,7 @@ The home page (index) features a minimal header with a large hero image for visu
 - User can book their own  (CRUD Functionality)
 - Safety ensured via [Django-AllAuth](https://github.com/pennersr/django-allauth) & csrf tokens
 
+## Features Left To Implement
 
 
 # Web Marketing Strategies
@@ -230,10 +238,6 @@ Social media accounts
 ## Email Marketing
 
 Newsletter
-
-
-# Features Left To Be Implemented
-
 
 
 
