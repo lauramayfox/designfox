@@ -14,4 +14,4 @@ def design_quote_request(request):
     return render(request, 'designquote/design_quote_request.html', {'form': form})
 
 def quote_thank_you(request):
-    return render(request, 'quote_thank_you.html')
+    return render(request, 'designquote/quote_thank_you.html')

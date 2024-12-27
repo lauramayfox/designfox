@@ -1,3 +1,5 @@
+{% load static %}
+
 <div class="collapse navbar-collapse" id="main-nav"></div>
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
@@ -23,14 +25,20 @@
         </li>
 
         <li>
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'design_quote_request' %}" 
-            id="design-quote-link" aria-haspopup="true" aria-expanded="false"> Design Quote</a>
-        </li>
-
-        <li>
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'services' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
                 Services
             </a>
+        </li>
+
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="contact-link" aria-haspopup="true" aria-expanded="false">
+                Testimonials
+            </a>
+        </li>
+
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'design_quote_request' %}" 
+            id="design-quote-link" aria-haspopup="true" aria-expanded="false"> Design Quote</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -40,3 +48,6 @@
         </li>
     </ul>
 </div>
+
+
+
