@@ -5,27 +5,98 @@
   <div class="row">
     <div class="col">
         <hr>
-        <h2 class="logo-font mb-4" style="padding-top: 30px; padding-bottom: 10px;">Services</h2>
+        <h2 class="logo-font mb-4" style="padding-top: 30px; padding-bottom: 10px;">Our Services</h2>
         <hr>
     </div>
 </div>
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <!-- Branding Service Card -->
+      <div class="col-md-4 mb-4">
         <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
-          <ul class="list-unstyled text-center mb-4">
-            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Branding</li>
-            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Logo Design</li>
-            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Web Design</li>
-            <li><i class="fa-solid fa-check-circle text-success mr-2"></i> Graphic Design</li>
-          </ul>
+          <h4 class="text-center mb-3">Branding</h4>
+          <p class="text-center mb-3">A strong brand identity helps your business stand out in a competitive market. We create a unique brand image that resonates with your target audience, improving customer loyalty and recognition.</p>
+          <div class="text-center">
+            <p><strong>Custom Logo</strong></p>
+            <p><strong>Brand Guidelines</strong></p>
+            <p><strong>Brand Strategy</strong></p>
+          </div>
         </div>
-        <div class="my-5 text-center">
-          <h4>
-            <a href="{% url 'design_quote_request' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Get A Quote</a>
-          </h4>
-        </div>
-        
       </div>
+
+      <!-- Logo Design Service Card -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <h4 class="text-center mb-3">Logo Design</h4>
+          <p class="text-center mb-3">A memorable logo is the cornerstone of any business's identity. We design logos that capture the essence of your brand and leave a lasting impression on customers, building trust and recognition.</p>
+          <div class="text-center">
+            <p><strong>Professional Design</strong></p>
+            <p><strong>Brand Consistency</strong></p>
+            <p><strong>Scalable Formats</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Design Service Card -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <h4 class="text-center mb-3">Web Design</h4>
+          <p class="text-center mb-3">An engaging, user-friendly website is essential for any business today. We design responsive, attractive websites that are optimized for both desktop and mobile users, improving user experience and conversions.</p>
+          <div class="text-center">
+            <p><strong>Custom Design</strong></p>
+            <p><strong>Mobile-First Design</strong></p>
+            <p><strong>SEO Optimization</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic Design Service Card -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <h4 class="text-center mb-3">Graphic Design</h4>
+          <p class="text-center mb-3">Our graphic design services help businesses create visually appealing content that enhances marketing efforts, builds brand awareness, and attracts customers.</p>
+          <div class="text-center">
+            <p><strong>Social Media Graphics</strong></p>
+            <p><strong>Flyers & Brochures</strong></p>
+            <p><strong>Advertisements</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packaging Design Service Card -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <h4 class="text-center mb-3">Packaging Design</h4>
+          <p class="text-center mb-3">Packaging design is crucial for product marketing. Our creative packaging solutions help make your products stand out on shelves and online, enhancing brand perception and attracting new customers.</p>
+          <div class="text-center">
+            <p><strong>Product Branding</strong></p>
+            <p><strong>Shelf Appeal</strong></p>
+            <p><strong>Eco-Friendly Designs</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Redesign Service Card -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+          <h4 class="text-center mb-3">Logo Redesign</h4>
+          <p class="text-center mb-3">Is your logo outdated? A logo redesign can give your business a fresh look, helping you stay relevant in an evolving market and appeal to new customers while retaining your loyal base.</p>
+          <div class="text-center">
+            <p><strong>Modern & Clean Design</strong></p>
+            <p><strong>Rebranding Strategy</strong></p>
+            <p><strong>Consistent Visual Identity</strong></p>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <div class="my-5 text-center">
+      <h4>
+        <a href="{% url 'design_quote_request' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Get A Quote</a>
+      </h4>
+    </div>
+
   </div>
-  {% endblock %}
+{% endblock %}
+
+
