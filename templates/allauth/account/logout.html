@@ -1,12 +1,16 @@
-{% extends "account/base_manage.html" %}
+{% extends "base.html" %} 
 {% load allauth i18n %}
 {% block head_title %}
     {% trans "Sign Out" %}
 {% endblock head_title %}
 {% block content %}
-    {% element h1 %}
-        {% trans "Sign Out" %}
-    {% endelement %}
+<div class="row">
+    <div class="col">
+        <hr>
+        <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 40px;">Sign Out</h2>
+        <hr>
+    </div>
+</div>
     {% element p %}
         {% trans 'Are you sure you want to sign out?' %}
     {% endelement %}

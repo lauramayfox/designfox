@@ -31,7 +31,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Actions</th> <!-- Changed column name -->
                                 </tr>
                             </thead>
 
@@ -78,10 +78,12 @@
                                             </div>
                                         </form>
                                         <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                    <td class="py-3"> <!-- Replaced Subtotal with Remove Icon -->
+                                        <a class="remove-item" id="remove_{{ item.item_id }}" data-size="{{ item.size }}" 
+                                           style="color: darkgreen;">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -129,7 +131,6 @@
     </div>
 {% endblock %}
 
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
@@ -157,3 +158,4 @@
     })
 </script>
 {% endblock %}
+

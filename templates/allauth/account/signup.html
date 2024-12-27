@@ -1,12 +1,17 @@
-{% extends "account/base_entrance.html" %}
+{% extends "base.html" %} 
 {% load allauth i18n %}
 {% block head_title %}
     {% trans "Signup" %}
 {% endblock head_title %}
 {% block content %}
-    {% element h1 %}
-        {% trans "Sign Up" %}
-    {% endelement %}
+<div class="row">
+    <div class="col">
+        <hr>
+        <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Register</h2>
+        <hr>
+    </div>
+</div>
+
     {% setvar link %}
         <a href="{{ login_url }}">
         {% endsetvar %}

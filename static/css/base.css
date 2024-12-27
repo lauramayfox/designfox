@@ -21,7 +21,12 @@ header {
 .shop-now-button {
     background: #334039;
     color: white;
-    min-width: 260px;
+    width: 100%; 
+    max-width: 260px; 
+    text-align: center;
+    margin: 20px auto; 
+    display: block; 
+    padding: 8px 16px;
 }
 
 .btn-black {
@@ -115,19 +120,17 @@ header {
         order: 2;
     }
 
+    /* Remove button for the smallest screens */
     .shop-now-button {
-        min-width: 200px;
-        font-size: 1rem;
-        padding: 8px 16px;
-        display: block;
-        text-align: center;
-        margin: 20px auto; 
+        display: block; 
     }
 
-    /* hero image */
+    /* Larger hero image */
     #hero {
         width: 100%;
-        padding: 0; 
+        padding: 0;
+        margin-top: 60px;
+        height: 70vh;
     }
 
     .col-12.col-md-8 {
@@ -135,6 +138,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -158,15 +162,22 @@ header {
     }
 
     .shop-now-button {
-        min-width: 200px; 
+        display: none;
     }
 
     body {
         font-size: 0.9rem; 
     }
+
+    /* Adjust hero for extra small screens */
+    #hero {
+        margin-top: 50px;
+        height: 75vh;
+        width: 100%;
+    }
 }
 
-/* Tablets (between 768px and 1024px) */
+/* Tablets (between 768px & 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 20px 0;
@@ -177,6 +188,16 @@ header {
     }
 
     .shop-now-button {
+        display: block;
+    }
+
+    .shop-now-button {
         min-width: 240px;
+    }
+
+    /* Adjust hero for tablet */
+    #hero {
+        height: 60vh;
+        width: 100%; 
     }
 }
