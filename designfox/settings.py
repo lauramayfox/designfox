@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'designquote',
     'contact',
     'wishlist',
+    'testimonials',
     
 
     # Other

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+  <div class="col">
+    <hr>
+    <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Testimonials</h2>
+    <hr>
+  </div>
+</div>
+
+<!-- Display Testimonials -->
+<div class="p-4 border rounded shadow-sm" style="background-color: #95bda053;">
+  <h3>What Our Clients Are Saying:</h3>
+  {% for testimonial in testimonials %}
+    <div class="testimonial mb-4">
+      <h4 class="font-weight-bold">{{ testimonial.name }}</h4>
+      <p>{{ testimonial.testimonial_text }}</p>
+      <small>Submitted on {{ testimonial.submitted_at|date:"F j, Y" }}</small>
+    </div>
+  {% empty %}
+    <p>No testimonials at the moment.</p>
+  {% endfor %}
+</div>
+
+<!-- Testimonial Submission Form -->
+<div class="p-4 border rounded shadow-sm mt-4" style="background-color: #95bda053;">
+  <h3>Submit Your Testimonial</h3>
+  <form method="post" class="needs-validation">
+    {% csrf_token %}
+    <div class="mb-3">
+      {% for field in form %}
+        <div class="mb-4">
+          <label for="{{ field.id_for_label }}" class="form-label font-weight-bold">
+            {{ field.label }}
+          </label>
+          {{ field }}
+          {% if field.help_text %}
+            <small class="form-text text-muted">{{ field.help_text }}</small>
+          {% endif %}
+          {% if field.errors %}
+            <div class="text-danger">
+              {{ field.errors }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <button type="submit" class="btn btn-black btn-lg w-40 mt-3">Submit</button>
+  </form>
+</div>
+
+<!-- Success Messages -->
+{% if messages %}
+  <div class="alert alert-success mt-4">
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% endblock %}
+
+

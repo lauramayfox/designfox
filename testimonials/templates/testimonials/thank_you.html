@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <hr>
+        <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Testimonials</h2>
+        <hr>
+    </div>
+</div>
+<h1>Thank You!</h1>
+<p>Your testimonial is pending approval.</p>
+<a href="{% url 'testimonial_list' %}" class="btn btn-black btn-lg w-40 mt-3">View Testimonials</a>
+<br>
+<br>
+{% endblock %}
