@@ -61,13 +61,14 @@
                 {% if user.is_authenticated %}
                 <form method="POST" action="{% url 'wishlist:add_to_wishlist' product.id %}">
                     {% csrf_token %}
-                    <button type="submit">Add to Wishlist</button>
+                    <button type="submit" class="btn btn-black">Add to Wishlist</button>
                 </form>
-                {% else %}
+            {% else %}
                 <form method="GET" action="{% url 'login' %}">
-                    <button type="submit">Login to add to your wishlist</button>
+                    <button type="submit" class="btn btn-black">Login to add to wishlist</button>
                 </form>
-                {% endif %}
+            {% endif %}
+            
 
             </div>
         </div>
