@@ -1,17 +1,14 @@
-<h1 align="center"><img src="/media/logo.png"/></h1>
+<h1 align="center"><img src="static/images/website-images/foxlogo.png"/></h1>
 
 # Design Fox
-### A graphic design E-Commerce Business
+### A graphic Design E-Commerce Business
 
-### [Link to the live site](https://)
+### [Link to the live site](https://design-fox-0911e03a4419.herokuapp.com/)
 
 
 ### Overview
 
-
-
-
-#### Design
+For the final 5th project as part of the Full Stack Software Development course at Code Institute, I decided to bring in the idea of my own personal design entity brand for a Graphic Design E-Commerce store. As part of the project, I have implemented CRUD (Create, Read Update & Delete) features, as well as 3 custom Django Models that meet the learning outcome expectations of the final course module.
 
 
 
@@ -20,19 +17,66 @@
 
 
 ## Site User Goals
+Creative Business Owners:
+Clients who are business owners looking for high-quality branding, web design, or packaging design to elevate their brand and stand out in a competitive market.
 
+Busy Professionals:
+Clients who lead busy lives and want a simple, straightforward process for requesting design services without the need for extensive back-and-forth emails or calls.
 
+Entrepreneurs Starting a New Venture:
+Clients who are launching a new business and need a cohesive brand identity, from logo creation to packaging, to establish their presence effectively.
+
+Established Businesses Seeking a Refresh:
+Clients looking to rebrand or improve their existing designs to keep up with trends and maintain relevance in their industry.
+
+Personal Projects:
+Clients interested in smaller design projects (e.g., invitations, custom artwork) who value the ability to inquire easily without committing to a full consultation.
+
+Informed Decision-Makers:
+Clients who want clear information about services, pricing, and past work to make an informed decision before reaching out.
+
+Collaboration-Minded Individuals:
+Clients who want to work closely with a designer who understands their vision and provides a personalized service experience.
 
 ## Site Owner Goals
+User-Friendly Website:
+To have a visually appealing, intuitive website that reflects the brand's ethos and streamlines the process for potential clients to inquire about design services.
+
+Efficient Quote Management:
+To have an integrated system that allows for easy management of quote requests, ensuring timely responses and clear organization of inquiries.
+
+Portfolio Showcase:
+To showcase past work in an elegant, professional way that demonstrates the range and quality of design services offered.
+
+Update Flexibility:
+To easily update services, pricing, and project availability as the business evolves or new offerings become available.
+
+Scalability:
+To maintain a website structure that can grow with the business, accommodating future features like client portals, project tracking, or new service categories.
+
+Brand Representation:
+To ensure that the website not only serves functional purposes but also communicates the brand's ethos, professionalism, and creativity to all visitors.
+
+Secure Client Data:
+To handle sensitive client information responsibly and professionally, adhering to privacy standards to build trust with clients.
+
+Reduced Administrative Work:
+To reduce the time spent on administrative tasks, such as responding to basic inquiries, by providing comprehensive service details and FAQs on the website.
+
+Feedback and Testimonials:
+To gather and showcase testimonials from happy clients to build credibility and trust with new visitors.
+
+Ongoing Engagement:
+To encourage repeat business by building lasting relationships with clients through follow-up emails, newsletters, or special offers.
 
 
 
+### Brand Identity & Colour Palette
 
-### Colour Palette
+I chose the colour palette for my entire site based off the logo that I designed for the business. Since my last name is Fox, I chose a fox icon design after doing some rough sketches before bringing it into Adobe Illustrator to finish off the final vector image. I went with varying shades of emerald green, which is my favourite colour. I feel this is a nice true reflection of the brand and theme for the E-commerce store identity.
 
+<h1 align="center"><img src="static/images/readme-images/brandcolours.jpg"/></h1>
 
-
-<h1 align="center"><img src=""/></h1>
 
 ### Wireframes
 
@@ -52,29 +96,58 @@ After deciding on the features for my project, I created a database structure sc
 
 Using GitHub Projects, I took on this project using Agile development methods to take each task one at a time and handle it in an organised manner. I found this method really wonderful for keeping track of where I was at in between working on the project.
 
-## User Stories
+# User Stories
 
 Github projects was used to help me keep track of project features and to help me focus on each sprint. I created a kaban board for my user stories, and added the MoSCoW (Must have, Should have, Could have, Won't have) prioritization to my user stories.
 
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
+- #### Account Registration
+  As a site user, I can register an account so that I can easily request design quotes and keep track of my inquiries.
 
-- USER STORY 1: Account Registration: As a Site User, I can register an account so that I can book in for grooming services.
-- USER STORY 2: Log In: As a user, I can log in so that I can access my profile.
-- USER STORY 3: Book Appointment: As a registered user, I want to create and book in my own appointments for my pet so that the process is easy and straightforward without the hassle of contacting the groomers directly.
-- USER STORY 4: Contact Information: As a user, I want to view information regarding open hours, directions and contact information so that I understand where the location is and have their direct details should I need to contact them further.
-- USER STORY 5: Services & Pricelist: As a user, I want to know what services are available, and what the cost is so that I know if the business can cater to my pet's needs.
-- USER STORY 6: Admin Functionality: As an admin, I need to have CRUD access to database data so that I can make necessary changes with ease of access whenever I need.
-- USER STORY 7: Groomers: As a user, I can see a list of the groomers to choose from, and read a blurb about them so that I can make a right choice in who can groom my pet.
-- USER STORY 8: About: As a user, I can read about the grooming salon to get a feel for their business ethos to make sure it is a good fit for my pet.
-- USER STORY 9: Site Adjustments: As a site admin, I can conveniently and easily make adjustments to the grooming service options available to book in the customer profile, and I can also update my groomers should I have any staff to add or remove.
-- USER STORY 10: Update appointments: As a registered user, I want to cancel my own bookings, or update the day so that I can have a user-friendly experience with less hassle of having to contact the grooming salon directly each time.
-- USER STORY 11: Book any groomer: As a user, I can make a booking with any groomer, none specified so that I don't have to make a choice if I don't know who to go with.
-- USER STORY 12: Confirmation text/email: As a user, I can get a further confirmation outside of my client portal with a confirmation via email or text automatically sent.
+- #### Log In
+  As a user, I can log in so that I can access my profile and view the status of my design project inquiries.
+
+- #### Request a Quote
+  As a registered user, I want to request a design quote directly on the website so that the process is straightforward and avoids the hassle of sending multiple emails.
+
+- #### Contact Information
+  As a user, I want to view information about Laura's location, contact details, and availability so that I know how and when to reach out.
+
+- #### Services Overview
+  As a user, I want to clearly see a list of services (e.g., branding, web design, packaging design) along with descriptions of how each can improve my business so that I can decide which service suits my needs best.
+
+- #### Admin Functionality
+  As an admin, I need CRUD access to manage service offerings, update client inquiries, and edit website content so that the platform remains current and user-friendly.
+
+- #### Portfolio/Gallery
+  As a user, I want to browse Laura's portfolio of past projects so that I can trust the quality and style of the work.
+
+- #### About
+  As a user, I can read about Laura's background, ethos, and approach to design so that I feel confident working with her.
+
+- #### Admin Adjustments
+  As a site admin, I can update service descriptions, adjust pricing, and manage client requests to keep the platform flexible and professional.
+
+- #### Update Quote Requests
+  As a registered user, I can update or cancel my quote requests if my project requirements change, making the experience more flexible.
+
+- #### General Inquiry Submission
+  As a user, I can submit a general inquiry without specifying the service I need so that I can ask questions or seek guidance.
+
+- #### Confirmation Email
+  As a user, I can receive an email confirmation after submitting a quote request or inquiry so that I have a record of my submission.
 
 # Features
 
-All pages, except for the customer profile portal, can be viewed without registering for an account.
+All pages, except for the customer profile portal and wishlist can be used/viewed without registering for an account.
+Only the site owner can view the product management section when logged in as the superuser.
+
+## Custom Django Models
+
+### Design Quote
+
+### Testimonials
+
+### Wishlist
 
 ## Features Left To Implement
 
@@ -333,7 +406,7 @@ web: guincorn PROJECT_NAME.wsgi
 
 # Resources
 
-- Initial project set up & AllAuth section followed along from 'I Think, Therefore I Blog' tutorial
+- Initial project set up & AllAuth section followed along from 'Boutique Ado' course lesson
 - [W3SCHOOLS](https://w3schools.com/) - General source of info & troubleshooting resource
 - [STACK OVERFLOW](https://stackoverflow.com/) - General source of info & troubleshooting resource
 
@@ -341,10 +414,9 @@ web: guincorn PROJECT_NAME.wsgi
 ### Media
 
 - Royalty free images from [Unsplash](https://unsplash.com/) & [Pexels](https://pexels.com/)
-- Site logo & favicon designed and made by me
-- The mockup image at the beginning of this file was created using [Am I Responsive](http://ami.responsivedesign.is/).
+- Site logo, hero image and favicon designed and made by me
 - Text sections derived from [OpenAI](https://openai.com/dall-e-2).
 
 ### Acknowledgements
 
-
+I wish to thank Code Institute staff, with special mention to the Student Care Team who have been extremely helpful during my time on this course. It's been a rollercoaster of a year, a year which I decided to challenge myself to jump completely out of my comfort zone to take on this course. I also with to thank my mentor Excellence for his guidance during this final project, and the previous ones along the way. 
