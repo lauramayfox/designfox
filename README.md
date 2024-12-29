@@ -8,7 +8,7 @@
 
 ### Overview
 
-For the final 5th project as part of the Full Stack Software Development course at Code Institute, I decided to bring in the idea of my own personal design entity brand for a Graphic Design E-Commerce store. As part of the project, I have implemented CRUD (Create, Read Update & Delete) features, as well as 3 custom Django Models that meet the learning outcome expectations of the final course module.
+For fifth and final project of the Full Stack Software Development course at Code Institute, I decided to bring in the idea of my own personal design entity for a Graphic Design E-Commerce business. As part of the project, I have implemented CRUD (Create, Read Update & Delete) features, as well as 3 custom Django Models that meet the learning outcome expectations of the final course module.
 
 
 
@@ -18,25 +18,23 @@ For the final 5th project as part of the Full Stack Software Development course 
 
 ## Site User Goals
 Creative Business Owners:
-Clients who are business owners looking for high-quality branding, web design, or packaging design to elevate their brand and stand out in a competitive market.
+Business owners looking for high-quality branding, web design, or packaging design to elevate their brand and stand out in a competitive market.
 
 Busy Professionals:
 Clients who lead busy lives and want a simple, straightforward process for requesting design services without the need for extensive back-and-forth emails or calls.
 
-Entrepreneurs Starting a New Venture:
+Entrepreneurs:
 Clients who are launching a new business and need a cohesive brand identity, from logo creation to packaging, to establish their presence effectively.
 
-Established Businesses Seeking a Refresh:
+Businesses Seeking a Refresh:
 Clients looking to rebrand or improve their existing designs to keep up with trends and maintain relevance in their industry.
 
 Personal Projects:
-Clients interested in smaller design projects (e.g., invitations, custom artwork) who value the ability to inquire easily without committing to a full consultation.
+Clients interested in smaller design projects (e.g., invitations, custom artwork) who value quick and easy contact methods without committing to a full consultation.
 
 Informed Decision-Makers:
 Clients who want clear information about services, pricing, and past work to make an informed decision before reaching out.
 
-Collaboration-Minded Individuals:
-Clients who want to work closely with a designer who understands their vision and provides a personalized service experience.
 
 ## Site Owner Goals
 User-Friendly Website:
@@ -61,7 +59,7 @@ Secure Client Data:
 To handle sensitive client information responsibly and professionally, adhering to privacy standards to build trust with clients.
 
 Reduced Administrative Work:
-To reduce the time spent on administrative tasks, such as responding to basic inquiries, by providing comprehensive service details and FAQs on the website.
+To reduce the time spent on administrative tasks, such as responding to basic inquiries, by providing comprehensive service details on the website.
 
 Feedback and Testimonials:
 To gather and showcase testimonials from happy clients to build credibility and trust with new visitors.
@@ -98,7 +96,7 @@ Using GitHub Projects, I took on this project using Agile development methods to
 
 # User Stories
 
-Github projects was used to help me keep track of project features and to help me focus on each sprint. I created a kaban board for my user stories, and added the MoSCoW (Must have, Should have, Could have, Won't have) prioritization to my user stories.
+Github projects was used to help me keep track of project features and to help me focus on each sprint. I created a kaban board for my user stories, and added the MoSCoW (Must have, Should have, Could have, Won't have) prioritization to my user stories and assigned them into Milestones.
 
 - #### Account Registration
   As a site user, I can register an account so that I can easily request design quotes and keep track of my inquiries.
@@ -145,56 +143,68 @@ Only the site owner can view the product management section when logged in as th
 
 The header/nav bar and footer were created in a base file and loaded onto each page at the start of every file.
 
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
+<h1><img src=""/></h1>
 
 ### Index
 
-The home page (index) features a minimal header with a large hero image for visual impact. Under the hero image is a small about section and groomer profiles to give the client an idea of the salon, and also to help match them with the right groomer for their needs.
+The home page (index) features a minimal header with a large hero image for visual impact. Under the hero image is the profile section, displaying some various visual works. Alongside this are click through contact buttons
 
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
+<h1><img src=""/></h1>
+<h1><img src=""/></h1>
+<h1><img src=""/></h1>
 
 
 ##  About
 
+The about section on the main navigation header features a drop down bar option linking to an about section, and the other linking to a portfolio section. Here, I created a short blurb about myself and what services I offer, along with a button linking to a contact section.
 
-
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
+<h1><img src="/images/readme-images/about.png"/></h1>
 
 ## Shop 
 
+<h1><img src="/images/readme-images/shop.png"/></h1>
+
 ## Services
+
+<h1><img src="/images/readme-images/"/></h1>
 
 ## Testimonials
 
 
-<h1 align="center"><img src="static/images/readme-images/contactpage.jpg"/></h1>
+<h1><img src="static/images/readme-images/></h1>
 
 ## Design Quote
 
-<h1 align="center"><img src=""/></h1>
+<h1><img src="static/images/readme-images/></h1>
 
 ## Contact
 
+<h1><img src="static/images/readme-images/></h1>
 
 ## Customer profile
 
+<h1><img src="static/images/readme-images/></h1>
+
 ## Cart
 
+<h1><img src="static/images/readme-images/></h1>
+
 ## Wishlist
+
+<h1><img src="static/images/readme-images/></h1>
 
 ## Admin product management
 
 ## Newsletter Sign Up
 
+<h1><img src="static/images/readme-images/newsletter.jpg"/></h1>
+
 ## Privacy Policy
 
+<h1><img src="static/images/readme-images/privacypolicy.png"/></h1>
+<h1><img src="static/images/readme-images/privacypolicy2.png"/></h1>
 
 
-<h1 align="center"><img src=""/></h1>
 
 
 ## Custom Django Models
@@ -449,6 +459,7 @@ web: guincorn PROJECT_NAME.wsgi
 - Royalty free images from [Unsplash](https://unsplash.com/) & [Pexels](https://pexels.com/)
 - Site logo, hero image and favicon designed and made by me
 - Text sections derived from [OpenAI](https://openai.com/dall-e-2).
+- Privacy Policy generated from [Privacy Policy Generator](https://privacypolicygenerator.info/).
 
 ### Acknowledgements
 
