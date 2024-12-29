@@ -217,6 +217,11 @@ The home page (index) features a minimal header with a large hero image for visu
 
 # Web Marketing Strategies
 
+## SEO 
+
+For the web marketing strategies course modules, we had a series of questions to consider for our E-Commerce store. 
+After thinking about the following questions, I came up with a series of relevant keywords to implement in my project's meta and alt tags for SEO purposes.
+
 Questions to consider
 
 - Who are your users?
@@ -227,19 +232,44 @@ Questions to consider
 - What are the goals of your business? Which marketing strategies would offer the best ways to meet those goals?
 - Would your business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
 
-## SEO 
+Short-Tail Keywords:
+1. Graphic Design
+2. Branding Services
+3. Graphic Design Ireland
+5. Logo Design
+6. Website Design
+7. Professional Design
+8. Print Design
+9. Illustration Design
+10. Creative Branding
+
+Long-Tail Phrases:
+1. Graphic Design Services in Ireland
+2. Creative Branding Solutions
+3. Elevate Your Brand with Stunning Design
+4. Logo Design for Small Businesses
+5. Professional Web Design Services
+6. Captivating Visuals for Marketing Campaigns
+7. Modern and Minimalist Graphic Design
+8. Design Solutions for Startups
+9. Brand Identity Development
+10. Designs for Print and Digital
+
+
+<h1><img src="static/images/readme-images/seo.jpg"/></h1>
+<h1><img src="static/images/readme-images/seo2.jpg"/></h1>
 
 ## Social Media Marketing
 
-Social media accounts
+I created a mockup of a business facebook page for the business. I think for a graphic design style business, Facebook and Instagram would be the best suited for marketing visually to the target audience.
 
-<h1 align="center"><img src="static/images/readme-images/facebook.png"/></h1>
+<h1><img src="static/images/readme-images/facebook.png"/></h1>
 
 ## Email Marketing
 
-Newsletter
+Thanks to Mail Chimp, we can integrate a newsletter sign up box directly into the footer of the site. This allows us to market the business to those who want to sign up to learn more or receive offers.
 
-
+<h1><img src="static/images/readme-images/newsletter.jpg"/></h1>
 
 # Technology
 
@@ -248,10 +278,9 @@ Newsletter
 - Python - Backend development
 - Javascript - Pop up modals
 - Django - Project Framework
-- Heroku PostgreSQL - Database
 - Font Awesome - Social icons
-- Bootstrap 5 - Front end styling framework
-- Google Fonts- Font styling
+- Bootstrap - Front end styling framework
+- Google Fonts - Font styling
 - GitHub - Code and Kaban
 - Heroku - Hosting & Deployment
 
