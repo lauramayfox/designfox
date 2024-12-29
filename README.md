@@ -158,38 +158,46 @@ The home page (index) features a minimal header with a large hero image for visu
 
 The about section on the main navigation header features a drop down bar option linking to an about section, and the other linking to a portfolio section. Here, I created a short blurb about myself and what services I offer, along with a button linking to a contact section.
 
-<h1><img src="/images/readme-images/about.png"/></h1>
+<h1><img src="static/images/readme-images/about.png"/></h1>
 
 ## Shop 
 
-<h1><img src="/images/readme-images/shop.png"/></h1>
+<h1><img src="static/images/readme-images/shop.png"/></h1>
 
 ## Services
 
-<h1><img src="/images/readme-images/"/></h1>
+<h1><img src="static/images/readme-images/"/></h1>
 
 ## Testimonials
 
-
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/testimonials.png></h1>
 
 ## Design Quote
 
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/quote.png></h1>
 
 ## Contact
 
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/contact.png></h1>
 
 ## Customer profile
 
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/myprofile.png></h1>
+
+
+## Wishlist
+
+<h1><img src="static/images/readme-images/wishlist1.png></h1>
 
 ## Cart
 
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/cart.png></h1>
 
-## Wishlist
+## Checkout
+
+<h1><img src="static/images/readme-images/checkout.png></h1>
+
+## Confirmation
 
 <h1><img src="static/images/readme-images/></h1>
 
