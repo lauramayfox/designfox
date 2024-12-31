@@ -80,7 +80,6 @@ I chose the colour palette for my entire site based off the logo that I designed
 
 
 <h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
 
 # UX
 
@@ -143,15 +142,20 @@ Only the site owner can view the product management section when logged in as th
 
 The header/nav bar and footer were created in a base file and loaded onto each page at the start of every file.
 
-<h1><img src=""/></h1>
+Header:
+<h1><img src="static/images/readme-images/header.png"/></h1>
+
+Footer:
+<h1><img src="static/images/readme-images/footer.png"/></h1>
 
 ### Index
 
-The home page (index) features a minimal header with a large hero image for visual impact. Under the hero image is the profile section, displaying some various visual works. Alongside this are click through contact buttons
+The home page (index) features a minimal header with a large hero image for visual impact. Under the hero image is the portfolio section, displaying some various visual works. Alongside this are click through contact buttons.
 
-<h1><img src=""/></h1>
-<h1><img src=""/></h1>
-<h1><img src=""/></h1>
+<h1><img src="static/images/readme-images/index1.png"/></h1>
+<h1><img src="static/images/readme-images/index2.png"/></h1>
+<h1><img src="static/images/readme-images/index3.png"/></h1>
+<h1><img src="static/images/readme-images/index4.png"/></h1>
 
 
 ##  About
@@ -219,9 +223,16 @@ The about section on the main navigation header features a drop down bar option 
 
 ### Design Quote
 
+<h1><img src="static/images/readme-images/"/></h1>
+
+
 ### Testimonials
 
+<h1><img src="static/images/readme-images/"/></h1>
+
 ### Wishlist
+
+<h1><img src="static/images/readme-images/"/></h1>
 
 
 ## Authentication
