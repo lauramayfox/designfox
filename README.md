@@ -1,7 +1,7 @@
 <h1 align="center"><img src="static/images/website-images/foxlogo.png"/></h1>
 
 # Design Fox
-### A graphic Design E-Commerce Business
+### Graphic Design E-Commerce Business
 
 ### [Link to the live site](https://design-fox-0911e03a4419.herokuapp.com/)
 
@@ -166,36 +166,36 @@ The about section on the main navigation header features a drop down bar option 
 
 ## Services
 
-<h1><img src="static/images/readme-images/"/></h1>
+<h1><img src="static/images/readme-images/services.png"/></h1>
 
 ## Testimonials
 
-<h1><img src="static/images/readme-images/testimonials.png></h1>
+<h1><img src="static/images/readme-images/testimonials.png"></h1>
 
 ## Design Quote
 
-<h1><img src="static/images/readme-images/quote.png></h1>
+<h1><img src="static/images/readme-images/quote.png"></h1>
 
 ## Contact
 
-<h1><img src="static/images/readme-images/contact.png></h1>
+<h1><img src="static/images/readme-images/contact.png"></h1>
 
 ## Customer profile
 
-<h1><img src="static/images/readme-images/myprofile.png></h1>
+<h1><img src="static/images/readme-images/myprofile.png"></h1>
 
 
 ## Wishlist
 
-<h1><img src="static/images/readme-images/wishlist1.png></h1>
+<h1><img src="static/images/readme-images/wishlist1.png"></h1>
 
-## Cart
+## Bag
 
-<h1><img src="static/images/readme-images/cart.png></h1>
+<h1><img src="static/images/readme-images/cart.png"></h1>
 
 ## Checkout
 
-<h1><img src="static/images/readme-images/checkout.png></h1>
+<h1><img src="static/images/readme-images/checkout.png"></h1>
 
 ## Confirmation
 

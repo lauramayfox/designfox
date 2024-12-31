@@ -1,4 +1,3 @@
-/* General */
 html {
     height: 100%;
 }
@@ -54,7 +53,6 @@ header {
     cursor: pointer;
 }
 
-/* Dropdown menu on hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
@@ -70,7 +68,6 @@ header {
     z-index: -1;
 }
 
-/* Footer */
 .footer-bg {
     background-color: #334039;
 }
@@ -81,12 +78,17 @@ header {
     margin: 0.7rem;
 }
 
-/* MEDIA QUERIES */
-
-/* Smaller devices */
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem; /* Reduce the size of the hamburger icon */
+    }
+
+    .navbar-collapse {
+        padding-top: 10px;
     }
 
     .logo-image {
@@ -95,10 +97,6 @@ header {
 
     .navbar {
         padding: 0; 
-    }
-
-    .navbar-collapse {
-        background-color: #ffffff; 
     }
 
     .footer-bg {
@@ -120,12 +118,10 @@ header {
         order: 2;
     }
 
-    /* Remove button for the smallest screens */
     .shop-now-button {
         display: block; 
     }
 
-    /* Larger hero image */
     #hero {
         width: 100%;
         padding: 0;
@@ -142,7 +138,6 @@ header {
     }
 }
 
-/* Extra small devices */
 @media (max-width: 576px) {
     .logo-font {
         font-size: 1.2rem;
@@ -169,7 +164,6 @@ header {
         font-size: 0.9rem; 
     }
 
-    /* Adjust hero for extra small screens */
     #hero {
         margin-top: 50px;
         height: 75vh;
@@ -177,7 +171,6 @@ header {
     }
 }
 
-/* Tablets (between 768px & 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 20px 0;
@@ -195,10 +188,22 @@ header {
         min-width: 240px;
     }
 
-    /* Adjust hero for tablet */
     #hero {
         height: 60vh;
-        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 60px;
+        right: 0;
     }
 }
 
