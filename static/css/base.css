@@ -54,7 +54,7 @@ header {
     cursor: pointer;
 }
 
-/* Dropdown menu on hover */
+/* Dropdown menu hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
@@ -68,6 +68,22 @@ header {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+/* Let's Chat button */
+.shop-now-container {
+    padding-left: 0;
+}
+
+.shop-now-button {
+    background-color: #334039;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.shop-now-button:hover {
+    background-color: #2b3234;
+    color: #ffffff;
 }
 
 /* Footer */
@@ -89,16 +105,22 @@ header {
         padding: 10px 0;
     }
 
-    .logo-image {
-        max-height: 40px; 
-    }
-
     .navbar {
         padding: 0; 
     }
 
     .navbar-collapse {
         background-color: #ffffff; 
+    }
+
+    .navbar-toggler {
+        background-color: #a8d5ba;
+        border: none;
+        color: white;
+    }
+
+    .logo-image {
+        max-height: 40px; 
     }
 
     .footer-bg {
@@ -120,12 +142,10 @@ header {
         order: 2;
     }
 
-    /* Remove button for the smallest screens */
     .shop-now-button {
         display: block; 
     }
 
-    /* Larger hero image */
     #hero {
         width: 100%;
         padding: 0;
@@ -139,6 +159,16 @@ header {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    .lets-chat-button {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 260px;
+        padding: 8px 16px;
+        background: #334039;
+        color: white;
     }
 }
 
@@ -161,19 +191,20 @@ header {
         margin-bottom: 15px;
     }
 
-    .shop-now-button {
-        display: none;
-    }
-
     body {
         font-size: 0.9rem; 
     }
 
-    /* Adjust hero for extra small screens */
     #hero {
         margin-top: 50px;
         height: 75vh;
         width: 100%;
+    }
+
+    .lets-chat-button {
+        margin-top: 20px;
+        position: relative;
+        z-index: 10;
     }
 }
 
@@ -195,12 +226,18 @@ header {
         min-width: 240px;
     }
 
-    /* Adjust hero for tablet */
     #hero {
         height: 60vh;
         width: 100%; 
     }
+
+    .lets-chat-button {
+        display: block;
+    }
 }
 
-
-
+@media (min-width: 768px) {
+    .shop-now-container {
+        padding-left: 50%;
+    }
+}

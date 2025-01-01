@@ -4,7 +4,7 @@ from .models import Testimonial
 from django.contrib import messages
 
 def testimonial_list(request):
-    # Handle form submission
+    """ A view to handle form submission """
     if request.method == 'POST':
         form = TestimonialForm(request.POST)
         if form.is_valid():
@@ -14,10 +14,8 @@ def testimonial_list(request):
     else:
         form = TestimonialForm()
 
-    # Get approved testimonials
     testimonials = Testimonial.objects.filter(approved=True).order_by('-submitted_at')
     
-    # Render the template with the form and testimonials
     return render(request, 'testimonials/testimonial_list.html', {
         'form': form,
         'testimonials': testimonials,
@@ -25,4 +23,5 @@ def testimonial_list(request):
 
 
 def thank_you(request):
+    """ Renders Thank You  """
     return render(request, 'testimonials/thank_you.html')
