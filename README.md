@@ -80,7 +80,6 @@ I chose the colour palette for my entire site based off the logo that I designed
 
 <h1><img src="static/images/readme-images/datastructure.png"/></h1>
 
-<h1 align="center"><img src=""/></h1>
 
 After deciding on the features for my project, I created a database structure schema to get an idea of how my data base and relationships between each type would work.
 

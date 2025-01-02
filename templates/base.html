@@ -42,74 +42,76 @@
    <body>
       <header class="container-fluid fixed-top  shadow-sm">
          <div class="container">
-         <div class="row align-items-center py-2">
-         <!-- Logo -->
-         <div class="col-12 col-lg-4 text-center text-lg-left">
-            <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
-               <img src="{% static 'images/website-images/foxlogo.png' %}" alt="logo design" class="img-fluid logo-image mr-2" style="max-height: 50px;">
-               <h2 class="logo-font text-black my-0"><strong>Design</strong> Fox</h2>
-            </a>
-         </div>
-         <!--Profile & Cart -->
-         <div class="col-12 col-lg-8 d-flex justify-content-end">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse w-100">
-                  <ul class="navbar-nav mr-auto">
-                     <!-- main navigation links -->
-                     {% include 'includes/main-nav.html' %}
-                  </ul>
-                  <ul class="navbar-nav">
-                     <!-- Wishlist Heart Icon -->
-                     <li class="nav-item">
-                        {% if user.is_authenticated %}
-                        <a href="{% url 'wishlist:wishlist' %}" class="nav-link text-black mr-3">
-                        <i class="fa fa-heart" style="color: #334039;"></i>
-                        </a>
-                        {% else %}
-                        <a href="{% url 'account_login' %}" class="nav-link text-black mr-3">
-                        <i class="fa fa-heart" style="color: #334039;"></i>
-                        </a>
-                        {% endif %}
-                     </li>
-                     <!-- Profile -->
-                     <li class="nav-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Profile
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                           {% if request.user.is_authenticated %}
-                           {% if request.user.is_superuser %}
-                           <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                           {% endif %}
-                           <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                           <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                           {% else %}
-                           <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                           <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                           {% endif %}
-                        </div>
-                     </li>
-                     <!-- Cart -->
-                     <li class="nav-item">
-                        <a class="nav-link {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}">
-                        <span class="d-flex align-items-center">
-                        <i class="fa-solid fa-cart-shopping" style="color: #212827;"></i>
-                        <span>
-                        {% if grand_total %}
-                        ${{ grand_total|floatformat:2 }}
-                        {% else %}
-                        $0.00
-                        {% endif %}
-                        </span>
-                        </span>
-                        </a>
-                     </li>
-                  </ul>
+            <div class="row align-items-center py-2">
+               <!-- Logo -->
+               <div class="col-12 col-lg-4 text-center text-lg-left">
+                  <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
+                     <img src="{% static 'images/website-images/foxlogo.png' %}" alt="logo design" class="img-fluid logo-image mr-2" style="max-height: 50px;">
+                     <h2 class="logo-font text-black my-0"><strong>Design</strong> Fox</h2>
+                  </a>
                </div>
-            </nav>
+               <!--Profile & Cart -->
+               <div class="col-12 col-lg-8 d-flex justify-content-end">
+                  <nav class="navbar navbar-expand-lg navbar-light w-100">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse w-100" id="main-nav">
+                        <ul class="navbar-nav mr-auto">
+                           <!-- main navigation links -->
+                           {% include 'includes/main-nav.html' %}
+                        </ul>
+                        <ul class="navbar-nav">
+                           <!-- Wishlist Heart Icon -->
+                           <li class="nav-item">
+                              {% if user.is_authenticated %}
+                              <a href="{% url 'wishlist:wishlist' %}" class="nav-link text-black mr-3">
+                              <i class="fa fa-heart" style="color: #334039;"></i>
+                              </a>
+                              {% else %}
+                              <a href="{% url 'account_login' %}" class="nav-link text-black mr-3">
+                              <i class="fa fa-heart" style="color: #334039;"></i>
+                              </a>
+                              {% endif %}
+                           </li>
+                           <!-- Profile -->
+                           <li class="nav-item dropdown">
+                              <a class="text-black nav-link" href="{% url 'profile' %}" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Profile
+                              </a>
+                              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                 {% if request.user.is_authenticated %}
+                                 {% if request.user.is_superuser %}
+                                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                 {% endif %}
+                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                 {% else %}
+                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                 {% endif %}
+                              </div>
+                           </li>
+                           <!-- Cart -->
+                           <li class="nav-item">
+                              <a class="nav-link {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}">
+                              <span class="d-flex align-items-center">
+                              <i class="fa-solid fa-cart-shopping" style="color: #212827;"></i>
+                              <span>
+                              {% if grand_total %}
+                              ${{ grand_total|floatformat:2 }}
+                              {% else %}
+                              $0.00
+                              {% endif %}
+                              </span>
+                              </span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
          </div>
       </header>
       <main>
@@ -143,7 +145,7 @@
                </div>
                <div class="col-md-3 text-md-end text-center text-white m-3">
                   <div id="mc_embed_shell">
-                     <style type="text/css">
+                     <style>
                         #mc_embed_signup{background:#95bda053; clear:left; font:11px Helvetica,Arial,sans-serif; width: 300px; height: 200px;}
                      </style>
                      <div id="mc_embed_signup">
