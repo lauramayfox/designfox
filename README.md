@@ -318,9 +318,17 @@ Thanks to Mail Chimp, we can integrate a newsletter sign up box directly into th
 
 - CSS Validation
 
-<h1><img src="static/images/readme-images/"/></h1>
+Code passes CSS validation.
 
-- Pep8 CI Linter passed (Example file):
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+- Pep8 CI Linter
 
 <h1><img src="static/images/readme-images/"/></h1>
 
