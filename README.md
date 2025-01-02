@@ -73,7 +73,7 @@ I chose the colour palette for my entire site based off the logo that I designed
 
 ### Wireframes
 
-<h1><img src="static/images/readme-images/"/></h1>
+<h1><img src="static/images/readme-images/wireframe.png"/></h1>
 
 
 ## Data Structure
