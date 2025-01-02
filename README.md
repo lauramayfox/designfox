@@ -314,7 +314,7 @@ Thanks to Mail Chimp, we can integrate a newsletter sign up box directly into th
 
 - HTML Validation
 
-<h1><img src="static/images/readme-images/"/></h1>
+<h1><img src="static/images/readme-images/htmlvalidation.png"/></h1>
 
 - CSS Validation
 
@@ -330,7 +330,7 @@ Code passes CSS validation.
 
 - Pep8 CI Linter
 
-<h1><img src="static/images/readme-images/"/></h1>
+<h1><img src="static/images/readme-images/CILinter.png"/></h1>
 
 ### Lighthouse Testing 
 
