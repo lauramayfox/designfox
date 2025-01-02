@@ -11,11 +11,6 @@
 For fifth and final project of the Full Stack Software Development course at Code Institute, I decided to bring in the idea of my own personal design entity for a Graphic Design E-Commerce business. As part of the project, I have implemented CRUD (Create, Read Update & Delete) features, as well as 3 custom Django Models that meet the learning outcome expectations of the final course module.
 
 
-
-<h1 align="center"><img src=""/></h1>
-
-
-
 ## Site User Goals
 Creative Business Owners:
 Business owners looking for high-quality branding, web design, or packaging design to elevate their brand and stand out in a competitive market.
@@ -73,17 +68,17 @@ To encourage repeat business by building lasting relationships with clients thro
 
 I chose the colour palette for my entire site based off the logo that I designed for the business. Since my last name is Fox, I chose a fox icon design after doing some rough sketches before bringing it into Adobe Illustrator to finish off the final vector image. I went with varying shades of emerald green, which is my favourite colour. I feel this is a nice true reflection of the brand and theme for the E-commerce store identity.
 
-<h1 align="center"><img src="static/images/readme-images/brandcolours.jpg"/></h1>
+<h1><img src="static/images/readme-images/brandcolours.jpg"/></h1>
 
 
 ### Wireframes
 
+<h1><img src="static/images/readme-images/"/></h1>
 
-<h1 align="center"><img src=""/></h1>
-
-# UX
 
 ## Data Structure
+
+<h1><img src="static/images/readme-images/datastructure.png"/></h1>
 
 <h1 align="center"><img src=""/></h1>
 
@@ -101,13 +96,13 @@ Github projects was used to help me keep track of project features and to help m
   As a site user, I can register an account so that I can easily request design quotes and keep track of my inquiries.
 
 - #### Log In
-  As a user, I can log in so that I can access my profile and view the status of my design project inquiries.
+  As a user, I can log in so that I can access my profile, update my address and see previous order history
 
 - #### Request a Quote
   As a registered user, I want to request a design quote directly on the website so that the process is straightforward and avoids the hassle of sending multiple emails.
 
 - #### Contact Information
-  As a user, I want to view information about Laura's location, contact details, and availability so that I know how and when to reach out.
+  As a user, I want to view information about the business location, contact details, and availability so that I know how and when to reach out.
 
 - #### Services Overview
   As a user, I want to clearly see a list of services (e.g., branding, web design, packaging design) along with descriptions of how each can improve my business so that I can decide which service suits my needs best.
@@ -116,19 +111,16 @@ Github projects was used to help me keep track of project features and to help m
   As an admin, I need CRUD access to manage service offerings, update client inquiries, and edit website content so that the platform remains current and user-friendly.
 
 - #### Portfolio/Gallery
-  As a user, I want to browse Laura's portfolio of past projects so that I can trust the quality and style of the work.
+  As a user, I want to browse the portfolio of past projects so that I can trust the quality and style of the work.
 
 - #### About
-  As a user, I can read about Laura's background, ethos, and approach to design so that I feel confident working with her.
+  As a user, I can read about background, ethos, and approach to design so that I feel confident working together.
 
 - #### Admin Adjustments
   As a site admin, I can update service descriptions, adjust pricing, and manage client requests to keep the platform flexible and professional.
 
 - #### Update Quote Requests
   As a registered user, I can update or cancel my quote requests if my project requirements change, making the experience more flexible.
-
-- #### General Inquiry Submission
-  As a user, I can submit a general inquiry without specifying the service I need so that I can ask questions or seek guidance.
 
 - #### Confirmation Email
   As a user, I can receive an email confirmation after submitting a quote request or inquiry so that I have a record of my submission.
@@ -203,9 +195,13 @@ The about section on the main navigation header features a drop down bar option 
 
 ## Confirmation
 
-<h1><img src="static/images/readme-images/></h1>
+<h1><img src="static/images/readme-images/confirmation.png"></h1>
 
-## Admin product management
+## Order History
+
+<h1><img src="static/images/readme-images/orderhistory.png"></h1>
+
+
 
 ## Newsletter Sign Up
 
@@ -217,23 +213,9 @@ The about section on the main navigation header features a drop down bar option 
 <h1><img src="static/images/readme-images/privacypolicy2.png"/></h1>
 
 
+### 404 Page
 
-
-## Custom Django Models
-
-### Design Quote
-
-<h1><img src="static/images/readme-images/"/></h1>
-
-
-### Testimonials
-
-<h1><img src="static/images/readme-images/"/></h1>
-
-### Wishlist
-
-<h1><img src="static/images/readme-images/"/></h1>
-
+<h1><img src="static/images/readme-images/404page.png"/></h1>
 
 ## Authentication
 
@@ -242,7 +224,12 @@ The about section on the main navigation header features a drop down bar option 
 - Safety ensured via [Django-AllAuth](https://github.com/pennersr/django-allauth) & csrf tokens
 
 ## Features Left To Implement
+I'd like to add several features in the future including:
 
+- A "recently viewed" section would be a nice addition to the UX/UI.
+- Sign in with Gmail account
+- Sign in only to submit a testimonial
+- Add a CAPTCHA or similar for testimonial section
 
 # Web Marketing Strategies
 
@@ -286,7 +273,17 @@ Long-Tail Phrases:
 
 
 <h1><img src="static/images/readme-images/seo.jpg"/></h1>
+
+## Meta Data
 <h1><img src="static/images/readme-images/seo2.jpg"/></h1>
+
+## Sitemap
+
+I've used XML-Sitemaps to generate a sitemap file. I downloaded the sitemap.xml and included in the repository.
+
+## Robots
+
+I've created the robots.txt file. 
 
 ## Social Media Marketing
 
@@ -318,15 +315,19 @@ Thanks to Mail Chimp, we can integrate a newsletter sign up box directly into th
 
 - HTML Validation
 
-<h1 align="center"><img src=""/></h1>
+<h1><img src="static/images/readme-images/"/></h1>
 
 - CSS Validation
 
-<h1 align="center"><img src=""/></h1>
+<h1><img src="static/images/readme-images/"/></h1>
 
 - Pep8 CI Linter passed (Example file):
 
-<h1 align="center"><img src=""/></h1>
+<h1><img src="static/images/readme-images/"/></h1>
+
+### Lighthouse Testing 
+
+<h1><img src="static/images/readme-images/"/></h1>
 
 
 ## Manual testing
@@ -346,27 +347,34 @@ Chrome DevTools was used during the development process to check and modify HTML
 
 | Test | Result  |
 |--|--|
-| User can navigate to  | Pass |
 | User can access each page | Pass|
-| SuperUser can access admin page|Pass|
+| SuperUser can access admin page |Pass|
 
 #### Account Authorisation Tests
 
 | Test | Result  |
 |--|--|
 | Only Superuser can access admin page |Pass|
-| Non authorised user can't access profile or booking page| Pass|
+| Superuser can update and delete shop items |Pass|
+| Superuser can update and delete categories |Pass|
+| Superuser can approve testimonials submitted on site  |Pass|
+| Non authorised user can't access admin panel | Pass|
+| Non authorised user can't access product management | Pass|
 
-#### Booking and Profile
+#### Profile
 
 | Test |Result  |
 |--|--|
-|User can make a booking | Pass |
-|User can view upcoming bookings | Pass |
-|User can delete any booking | Pass |
-|User can update booking | Pass |
-|User can make multiple bookings | Pass |
+|User can add items to bag | Pass |
+|User can delete items from bag | Pass |
+|User can submit a design quote | Pass |
+|User can view and update address in their profile | Pass |
+|User can make a purchase with Stripe | Pass |
 |User can see the confirmation information | Pass |
+|User can view and update their address on profile page | Pass |
+|User can view order history on profile page | Pass |
+|User can add items to wishlist upon log in | Pass |
+|User can view wishlist items with the heart link on the nav bar | Pass |
 
 ### Responsiveness
 
@@ -382,20 +390,13 @@ Safari |  No issues found (appearance/responsiveness) | Pass |
 Mozilla Firefox |  No issues found (appearance/responsiveness)| Pass |
 Microsoft Edge |  No issues found (appearance/responsiveness) | Pass |
 
-### Lighthouse Testing 
-
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
-
 
 
 ### Known Issues & Bugs
 
+After final deployment, I noticed a small bug on the confirmation of purchase, it has 0 in the total amounts. I ran out of time to investigate, but will fix for future iterations.
 
-
-<h1 align="center"><img src=""/></h1>
-
-
+<h1><img src="static/images/readme-images/confirmation.png"/></h1>
 
 
 # Deployment
