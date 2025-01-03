@@ -10,6 +10,11 @@
 
 For fifth and final project of the Full Stack Software Development course at Code Institute, I decided to bring in the idea of my own personal design entity for a Graphic Design E-Commerce business. As part of the project, I have implemented CRUD (Create, Read Update & Delete) features, as well as 3 custom Django Models that meet the learning outcome expectations of the final course module.
 
+I liked the idea of creating a design / store hybrid, where potential clients can come find out more about design services, and others can browse and purchase prints and accesories with various design concepts. It's a business idea I would love to have myself in the future at some stage, so I thought I would try out the concept to see how it would look!
+
+
+<h1><img src="static/images/readme-images/mockup.png"/></h1>
+
 
 ## Site User Goals
 Creative Business Owners:
@@ -73,6 +78,8 @@ I chose the colour palette for my entire site based off the logo that I designed
 
 ### Wireframes
 
+I usually keep wireframes fairly simple and had a standard idea of how I wanted my site to look. I love the minimalist look and feel of sites that have paired back UX/UI.
+
 <h1><img src="static/images/readme-images/wireframe.png"/></h1>
 
 
@@ -81,7 +88,7 @@ I chose the colour palette for my entire site based off the logo that I designed
 <h1><img src="static/images/readme-images/datastructure.png"/></h1>
 
 
-After deciding on the features for my project, I created a database structure schema to get an idea of how my data base and relationships between each type would work.
+After deciding on the features for my project, I created a database structure schema to get an idea of how my data base and relationships between each type would work. At the end of the project, I did update the schema as ideas changed along the way and I decided to add a wishlist.
 
 # Agile Development
 
@@ -157,46 +164,68 @@ The about section on the main navigation header features a drop down bar option 
 
 ## Shop 
 
+The shop section was followed along to boutique ado walkthrough. I found this really helpful in preparation for creating my own custom models for other features on the site.
+
 <h1><img src="static/images/readme-images/shop.png"/></h1>
 
 ## Services
+
+For services, I kept this page very simple with bootstrap styling and general information for the potential client to get an idea of services ahead of requesting a design quote.
 
 <h1><img src="static/images/readme-images/services.png"/></h1>
 
 ## Testimonials
 
+This part of the site is the first of three custom models for the e-commerce site. Currently anyone can submit a testimonial, but they will only appear in the 'What our clients are saying' section after approval in the admin panel by the superuser. 
+
 <h1><img src="static/images/readme-images/testimonials.png"></h1>
 
 ## Design Quote
+
+Here we have the second custom model, a contact form where the potential clients can reach out with their interest and potential ideas and information for design services. The idea is that the form would submit to the business' email address, and the conversation will continue via email or call. It is not currently set up to email, but I tested it on the console.
 
 <h1><img src="static/images/readme-images/quote.png"></h1>
 
 ## Contact
 
+The contact section is all the contact sources in the one place to reach out to the business. I added a google map feature which I personally really like as an additional touch to a website.
+
 <h1><img src="static/images/readme-images/contact.png"></h1>
 
 ## Customer profile
+
+Here the customer can update their address on file or see their order history if they made any purchases in the shop.
 
 <h1><img src="static/images/readme-images/myprofile.png"></h1>
 
 
 ## Wishlist
 
+The final custom model for the project, the wishlist, is my favourite addition to have added to the site. I had thought it's implementation would be way harder, but after watching several walkthroughs and searching on slack from fellow students, I was able to implement it and add a clickable heart favicon to bring the user to the page.
+
 <h1><img src="static/images/readme-images/wishlist1.png"></h1>
 
 ## Bag
 
+The bag and checkout sections were mostly followed along to the boutique ado walk through, with some tweaks and adjustments. 
+
 <h1><img src="static/images/readme-images/cart.png"></h1>
 
-## Checkout
+## Checkout & Stripe
+
+The checkout part of the walk along course tutorials were definitely the most interesting to follow along to with the implementation of Stripe. I learned so much about Stripe and how powerful this is that it can be implemented into any project build. 
 
 <h1><img src="static/images/readme-images/checkout.png"></h1>
 
 ## Confirmation
 
+The confirmation page displays directly after card payment info has been entered and submitted.
+
 <h1><img src="static/images/readme-images/confirmation.png"></h1>
 
 ## Order History
+
+A small panel overview of previous purchase history on the user profile.
 
 <h1><img src="static/images/readme-images/orderhistory.png"></h1>
 
@@ -204,15 +233,21 @@ The about section on the main navigation header features a drop down bar option 
 
 ## Newsletter Sign Up
 
+Thanks to MailChimp, it was very easy to set up a business campaign and generate a newsletter box for site visitors to sign up to. I updated the CSS styling of the code provided by MailChimp to keep in with the UX/UI of the website.
+
 <h1><img src="static/images/readme-images/newsletter.jpg"/></h1>
 
 ## Privacy Policy
+
+The privacy policy is available through a click through link in the footer.
 
 <h1><img src="static/images/readme-images/privacypolicy.png"/></h1>
 <h1><img src="static/images/readme-images/privacypolicy2.png"/></h1>
 
 
 ### 404 Page
+
+An error 404 page will render when a wrong weblink is entered. 
 
 <h1><img src="static/images/readme-images/404page.png"/></h1>
 
@@ -314,6 +349,8 @@ Thanks to Mail Chimp, we can integrate a newsletter sign up box directly into th
 
 - HTML Validation
 
+HTML passes validation on all HTML pages.
+
 <h1><img src="static/images/readme-images/htmlvalidation.png"/></h1>
 
 - CSS Validation
@@ -330,11 +367,16 @@ Code passes CSS validation.
 
 - Pep8 CI Linter
 
+I had to update some longer passages on files, but now passes.
 <h1><img src="static/images/readme-images/CILinter.png"/></h1>
 
 ### Lighthouse Testing 
 
-<h1><img src="static/images/readme-images/"/></h1>
+Lighthouse testing produced some strange returns for my project. When I first ran it, performance and best practice issues were appearing red, as seen below. In incognito the first time, best practices changed to a score of 78. When I retested today again on incognito (2 days after first testing), it appeared red again. Chat GPT and Stack Overflow tells me the issue is likely with Lighthouse rather than my project when I searched the error code. I ran out of time to look into this further before project submission, but I want to find out more ahead of any future iterations of the project.
+
+<h1><img src="static/images/readme-images/lighthouse1.png"/></h1>
+<h1><img src="static/images/readme-images/lighthouse2.png"/></h1>
+<h1><img src="static/images/readme-images/lighthouse3.png"/></h1>
 
 
 ## Manual testing
@@ -397,13 +439,17 @@ Safari |  No issues found (appearance/responsiveness) | Pass |
 Mozilla Firefox |  No issues found (appearance/responsiveness)| Pass |
 Microsoft Edge |  No issues found (appearance/responsiveness) | Pass |
 
+### Other Testing
 
+I had 4 family members test out the site and report their feedback on UX/UI and testing out CRUD features on each section of the site. I made notes of anything significant, and rectified a few UX features based off their feedback.
 
 ### Known Issues & Bugs
 
 After final deployment, I noticed a small bug on the confirmation of purchase, it has 0 in the total amounts. I ran out of time to investigate, but will fix for future iterations.
 
 <h1><img src="static/images/readme-images/confirmation.png"/></h1>
+
+The other issue is what is mentioned above in regards to lighthouse testing errors.
 
 
 # Deployment
@@ -490,4 +536,4 @@ web: guincorn PROJECT_NAME.wsgi
 
 ### Acknowledgements
 
-I wish to thank Code Institute staff, with special mention to the Student Care Team who have been extremely helpful during my time on this course. It's been a rollercoaster of a year, a year which I decided to challenge myself to jump completely out of my comfort zone to take on this course. I also with to thank my mentor Excellence for his guidance during this final project, and the previous ones along the way. 
+I wish to thank Code Institute staff, with special mention to the Student Care Team who have been extremely helpful during my time on this course. It's been a rollercoaster of a year, a year which I decided to challenge myself to jump completely out of my comfort zone to take on this course. A massive thanks and shout out to my family who have been so supportive of my journey (As well as my trusted site testers!) I also with to thank my mentor Excellence for his guidance during this final project, and the previous ones along the way. 
