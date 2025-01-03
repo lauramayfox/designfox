@@ -525,11 +525,16 @@ web: guincorn PROJECT_NAME.wsgi
 - Initial project set up & AllAuth section followed along from 'Boutique Ado' course lesson
 - [W3SCHOOLS](https://w3schools.com/) - General source of info & troubleshooting resource
 - [STACK OVERFLOW](https://stackoverflow.com/) - General source of info & troubleshooting resource
+- [YouTube](https://youtube.com/) - Django E-Commerce walkthrough lessons with Codemy
+- CI Slack channel student chat as a troubleshooting/general source of info
+- [OpenAI](https://openai.com/) - Troubleshooting bugs, text for website and for help with media queries/CSS
+
 
 
 ### Media
 
 - Royalty free images from [Unsplash](https://unsplash.com/) & [Pexels](https://pexels.com/)
+- Mockup ReadMe laptop template picture [FreePik](www.freepik.com)
 - Site logo, hero image and favicon designed and made by me
 - Text sections derived from [OpenAI](https://openai.com/dall-e-2).
 - Privacy Policy generated from [Privacy Policy Generator](https://privacypolicygenerator.info/).
