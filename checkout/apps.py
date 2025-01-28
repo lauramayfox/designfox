@@ -7,3 +7,6 @@ class CheckoutConfig(AppConfig):
 
     def ready(self):
         import checkout.signals
+
+
+
