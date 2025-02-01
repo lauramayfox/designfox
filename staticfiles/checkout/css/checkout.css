@@ -32,8 +32,8 @@
 
 #payment-form .form-control,
 #card-element {
-    color:#334039;
-    border: 1px solid #334039;
+    color: #000;
+    border: 1px solid #000;
 }
 
 select,
@@ -45,4 +45,6 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
+
 
