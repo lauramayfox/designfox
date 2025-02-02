@@ -31,6 +31,14 @@
                     {{ form|crispy }}
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
+                {% if messages %}
+                <div class="alert alert-success">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                </div>
+                {% endif %}
+
             </div>
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>

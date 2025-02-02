@@ -1,6 +1,6 @@
 from django import forms
+import re
 from .models import UserProfile
-
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
@@ -32,3 +32,9 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+    def clean_default_phone_number(self):
+        phone_number = self.cleaned_data.get('default_phone_number')
+        if not phone_number.isdigit():
+            raise forms.ValidationError("Phone number must contain only digits")
+        return phone_number

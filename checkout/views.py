@@ -171,7 +171,7 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-      # ✅ Generate Email Content
+      # Generate Email Content
     subject = render_to_string(
         'checkout/confirmation_emails/confirmation_email_subject.txt',
         {'order': order}
@@ -182,7 +182,7 @@ def checkout_success(request, order_number):
         {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
     )
 
-    # ✅ Send Email
+    # Send Email
     send_mail(
         subject,
         body,
