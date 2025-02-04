@@ -35,6 +35,10 @@ class UserProfileForm(forms.ModelForm):
 
     def clean_default_phone_number(self):
         phone_number = self.cleaned_data.get('default_phone_number')
+        if not phone_number:
+            return phone_number  # Allow empty phone numbers if the field is optional
+
         if not phone_number.isdigit():
-            raise forms.ValidationError("Phone number must contain only digits")
+            raise forms.ValidationError("Phone number must contain only digits.")
+
         return phone_number
