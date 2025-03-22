@@ -32,7 +32,7 @@ DEBUG = False
 
 
 
-ALLOWED_HOSTS = ['8000-lauramayfox-designfox-3e54pjnt7b0.ws.codeinstitute-ide.net',
+ALLOWED_HOSTS = ['127.0.0.1',
 '.herokuapp.com', 'design-fox-0911e03a4419.herokuapp.com', 'localhost',]
 
 
