@@ -1,2 +1,4 @@
-{% blocktrans %}Design Fox | Account Already Exists{% endblocktrans %}
-
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans %}Account Already Exists{% endblocktrans %}
+{% endautoescape %}
