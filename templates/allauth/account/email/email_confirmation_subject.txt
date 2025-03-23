@@ -1,4 +1,2 @@
-{% load i18n %}
-{% autoescape off %}
-{% blocktrans %}Please Confirm Your Email Address{% endblocktrans %}
-{% endautoescape %}
+{% blocktrans %}Design Fox| Please Confirm Your Email Address{% endblocktrans %}
+
