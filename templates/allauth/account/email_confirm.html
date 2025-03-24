@@ -1,14 +1,21 @@
-{% extends "account/base_entrance.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% load account %}
 {% load allauth %}
 {% block head_title %}
     {% trans "Confirm Email Address" %}
 {% endblock head_title %}
+
 {% block content %}
-    {% element h1 %}
-        {% trans "Confirm Email Address" %}
-    {% endelement %}
+
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Confirm Email Address</h2>
+            <hr>
+        </div>
+    </div>
     {% if confirmation %}
         {% user_display confirmation.email_address.user as user_display %}
         {% if can_confirm %}
@@ -37,3 +44,4 @@
         {% endelement %}
     {% endif %}
 {% endblock content %}
+</div>
