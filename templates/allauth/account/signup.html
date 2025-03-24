@@ -1,16 +1,20 @@
 {% extends "base.html" %} 
+{% load static %}
 {% load allauth i18n %}
 {% block head_title %}
     {% trans "Signup" %}
 {% endblock head_title %}
 {% block content %}
-<div class="row">
-    <div class="col">
-        <hr>
-        <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Register</h2>
-        <hr>
+
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4" style="padding-top: 80px; padding-bottom: 10px;">Register</h2>
+            <hr>
+        </div>
     </div>
-</div>
+
 
     {% setvar link %}
         <a href="{{ login_url }}">
@@ -43,8 +47,10 @@
         {% element button href=signup_by_passkey_url tags="prominent,signup,outline,primary" %}
             {% trans "Sign up using a passkey" %}
         {% endelement %}
-    {% endif %}
+    {% endif %} <br><br>
     {% if SOCIALACCOUNT_ENABLED %}
         {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
     {% endif %}
 {% endblock content %}
+
+</div>
