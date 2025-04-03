@@ -10,6 +10,13 @@ body {
     font-family: 'Lato';
 }
 
+
+#hero {
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+ 
 header {
     background-color: white;
 }
